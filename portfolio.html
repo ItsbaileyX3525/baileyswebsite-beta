@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Portfolio</title>
+</head>
+<body class="bg-[#0c0c0c] relative font-[firaCode] h-screen w-screen select-none">
+    <div class="flex h-full w-full">
+    <!--Left side-->
+        <div class="mt-auto mb-auto pl-3 text-2xl max-w-2/3">
+            <p id="path" class="cursor-pointer" onclick="changeDir('', true)">
+                ./
+            </p>
+            <div id="currentDir" class="flex flex-col justify-center items-start">
+            </div>
+        </div>
+    <!--Right side-->
+    <div id="consoleContents" class="flex pl-10 justify-center items-center h-full w-full flex-wrap overflow-auto">
+        <img class="h-[35%]" src="/assets/portfolio/Arch.png">
+        <div class="flex flex-col">
+            <p class="text-[#0dcdcd]">baile@baile</p>
+            <p>- - - - - -</p>
+            <p><data class="text-[rgb(13,205,205)]">OS</data>: Arch Linux x86_64</p>
+            <p><data class="text-[rgb(13,205,205)]">HOST</data>: B760 Pro RS/D4</p>
+            <p><data class="text-[rgb(13,205,205)]">KRNL</data>: Linux 6.15.7-arch1-1</p>
+            <p><data class="text-[#0dcdcd]">CPU</data>: i5-12400F (12) @ 5.60 GHz</p>
+            <p><data class="text-[#0dcdcd]">GPU</data>: NVIDIA GeForce RTX 3060</p>
+            <p><data class="text-[#0dcdcd]">Disk</data>: (/): 916 GiB</p>
+            <p><data class="text-[#0dcdcd]">Disk</data>: (/mnt/games): 3.1 TiB</p>
+            <p><data class="text-[#0dcdcd]">Memory</data>: 31.06 GiB</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Just in case I need it again
+    <div class=" bg-gray-600 absolute top-0 left-0 z-50 flex justify-center w-[90%] h-[90%] m-[5%] select-text">
+        test
+    </div>-->
+</body>
+<script type="module" src="/src/portfolio.ts"></script>
+</html>
