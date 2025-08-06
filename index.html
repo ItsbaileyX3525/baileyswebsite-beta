@@ -9,10 +9,12 @@
   <link rel="preload" as="image" href="/assets/index/icons/discord-white.svg" type="image/svg+xml"/>
   <link rel="prefetch" as="image" href="/assets/index/icons/github-dark.svg" type="image/svg+xml"/>
   <link rel="preload" as="image" href="/assets/index/icons/github-white.svg" type="image/svg+xml"/>
+  <link rel="prefetch" as="image" href="/assets/shuffle.svg" type="image/svg+xml"/>
+  <link rel="prefetch" as="image" href="/assets/unshuffled.svg" type="image/svg+xml"/>
   <title>Bailey's website</title>
-  <script type="module" crossorigin src="/assets/main-Bo3pgoIs.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/style-rIcS7i-f.js">
-  <link rel="stylesheet" crossorigin href="/assets/style-XggwyjE-.css">
+  <script type="module" crossorigin src="/assets/main-O0_n09e2.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/style-9GBjC2TG.js">
+  <link rel="stylesheet" crossorigin href="/assets/style-BsFlGFmJ.css">
 </head>
 <body>
   <div class="grid grid-cols-4 gap-2 text-center bg-blue-300 pb-0.5 rounded-b-2xl">
@@ -21,9 +23,22 @@
     <div href="/portfolio" id="portfolio-button" class="bg-violet-400 rounded-b-2xl cursor-pointer select-none text-2xl hover:text-[25px] active:text-[23px]">Portfolio</div>
     <div href="/flikhost" id="flikhost-button" class="bg-violet-400 rounded-b-2xl cursor-pointer select-none text-2xl hover:text-[25px] active:text-[23px]" data-link>Flikhost</div>
   </div>
-    <audio id="song" autoplay>
-        <source src="/assets/DanTDM - spacedog.mp3" type="audio/mpeg">
+  <div id="music-details" class="bg-gray-500 absolute left-1/2 transform-[translateX(-50%)] bottom-5  px-2 py-1 rounded-2xl text-black opacity-0 transition-opacity duration-1000 ease-in-out">
+    <p>Now playing: DanTDM - Spacedog</p>
+  </div>
+    <audio id="song">
+        <source id="song-source" src="/assets/DanTDM - Spacedog.mp3" type="audio/mpeg">
     </audio>
+    <div class="absolute top-12 right-3">
+        <div class="flex gap-3">
+            <div id="music-player">
+                <img id="music-image" class="bg-gray-600 rounded-md max-w-12 cursor-pointer" src="/assets/speaker_disabled.svg" alt="">
+            </div>
+            <div id="music-player-shuffle">
+                <img id="shuffle-image" class="bg-gray-600 rounded-md max-w-12 cursor-pointer" src="/assets/unshuffled.svg" alt="">
+            </div>
+        </div>
+    </div>
   <div id="app">
   </div>
 </body>
